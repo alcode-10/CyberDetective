@@ -14,7 +14,7 @@ body {
 }
 
 .tips-page {
-  background: rgba(0, 0, 0, 0); /* translucent panel */
+  background: rgba(0, 0, 0, 0);
   border-radius: 1px;
   max-width: 50rem;
   margin-top:2rem;
@@ -60,7 +60,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Back button */
 .back-btn {
   background-color: crimson;
   color: black;
@@ -78,7 +77,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .tips-page h2 {
     font-size: 1.8rem;

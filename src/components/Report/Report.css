@@ -1,5 +1,5 @@
 .report-container {
-  background: rgba(0, 0, 0, 0.0); /* translucent panel */
+  background: rgba(0, 0, 0, 0.0);
   border-radius: 1px;
   max-width: 60rem;
   margin-top:1000px;
@@ -26,7 +26,6 @@
   text-align: center;
 }
 
-/* Optional glowing animation for text */
 @keyframes glow {
   from {
     text-shadow: 0 0 4px white, 0 0 3px white;
@@ -37,7 +36,7 @@
 }
 
 
-/* Fullscreen HUD background */
+
 body {
   margin: 0;
   padding: 0;
@@ -52,7 +51,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Input style */
+
 .report-container input {
   padding: 0.7rem;
   width: 80%;
@@ -64,7 +63,7 @@ body {
   font-size: 1rem;
 }
 
-/* Buttons with neon glow */
+
 .report-container button {
   background-color: crimson;
   color: black;
@@ -82,7 +81,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Report card section */
+
 .report-card {
   padding: 2rem;
   background: rgba(0, 0, 0, 0.0); 
@@ -90,7 +89,7 @@ body {
   height:39rem;
 }
 
-/* Badge */
+
 .badge {
   margin-top: 1rem;
   font-size: 1.1rem;
@@ -101,7 +100,7 @@ body {
   color: #00ffa2;
 }
 
-/* Tips section */
+
 .tips-box {
   margin-top: 1rem;
   padding: 1rem;
@@ -110,7 +109,7 @@ body {
   border-radius: 10px;
 }
 
-/* Additional tips button */
+
 .tips-btn {
   margin-top: 1rem;
   background-color: #00f7ff;

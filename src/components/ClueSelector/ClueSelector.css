@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Poppins&display=swap');
 
-/* 🌌 Fullscreen cyber background */
+
 .clue-selector {
-  background-image: url('/assets/background.jpg'); /* Optional eerie bg */
+  background-image: url('/assets/background.jpg');
   background-size: cover;
   background-position: center;
   min-height: 91.25vh;
@@ -12,12 +12,12 @@
   align-items: center;
   font-family: 'Bitcount Grid Double', sans-serif;
   box-sizing: border-box;
-  background-color: #0f172a; /* fallback dark bg */
+  background-color: #0f172a; 
 }
 
-/* 📦 Container */
+
 .clue-selector-box {
-  background-color: rgba(15, 15, 15, 0.9); /* translucent dark */
+  background-color: rgba(15, 15, 15, 0.9); 
   padding: 3rem;
   border-radius: 20px;
   max-width: 1500px;
@@ -28,7 +28,7 @@
   max-height: fit-content;
 }
 
-/* 🧠 Title */
+
 .clue-selector-box h2 {
   color: #ff0054;
   font-size: 2rem;
@@ -36,17 +36,15 @@
   font-family: 'Bitcount Grid Double', sans-serif;
 }
 
-/* 🧩 Clue grid */
+
 .clue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
-/* 🧿 Clue card */
 .clue-card {
   position: relative;
-  /* background: url('/assets/cyber-overlay.png') center/cover no-repeat; 🖼️ Eerie cyber image */
   color: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -62,7 +60,7 @@
   backdrop-filter: blur(3px);
 }
 
-/* 👻 Dark glass overlay */
+
 .clue-card::before {
   content: "";
   position: absolute;
@@ -72,31 +70,31 @@
   border-radius: 12px;
 }
 
-/* 🪄 Content inside */
+
 .clue-card * {
   position: relative;
   z-index: 1;
 }
 
-/* 🧠 Clue title */
+
 .clue-card h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-family: 'Bitcount Grid Double', sans-serif;
 }
 
-/* ✅ Completion indicator */
+
 .complete {
   color: limegreen;
   font-weight: bold;
 }
 
-/* 🖲️ Hover effect */
+
 .clue-card:hover {
   transform: translateY(-20px);
 }
 
-/* 🎯 Button */
+
 .clue-grid button {
   margin-top: 10rem;
   padding: 3px 0.5px;
@@ -118,7 +116,7 @@
   border: 1px solid maroon;
 }
 
-/* 📱 Responsive tweaks */
+
 @media (max-width: 768px) {
   .clue-selector-box {
     padding: 2rem;

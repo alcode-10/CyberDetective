@@ -6,7 +6,7 @@ import CaseIntro from "./components/CaseIntro/CaseIntro";
 import ClueSelector from "./components/ClueSelector/ClueSelector";
 import ClueStep from "./components/ClueStep/ClueStep";
 import Report from "./components/Report/Report";
-import MusicPlayer from "./components/Musicplayer";
+import MusicPlayer from "./components/Musicplayer/Musicplayer";
 import clues from "./data/clues";
 import cases from "./data/cases";
 import "./App.css";
