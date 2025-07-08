@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caprasimo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quintessential&display=swap');
+.case-selector {
+  background-image: url('/assets/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 91.25vh;
+  width: 99.025vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bitcount Grid Double', sans-serif;
+  color: white;
+  padding: 2.1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  box-sizing: border-box;
+}
+
+
+.case-selector-container {
+  background-color: rgba(15, 15, 15, 0.9); 
+  color: #16f2b3;
+  padding: 4rem 6rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 84, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 1300px;
+}
+
+
+.case-selector-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #ff0054;
+  font-family: 'Bitcount Grid Double', sans-serif;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-items: center;
+}
+
+
+.case-card {
+  background-color: rgba(255, 160, 122, 0.9); 
+  color: maroon;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 0, 84, 0.3);
+}
+
+
+.case-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: maroon;
+}
+
+.case-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.case-card button {
+  background-color: crimson;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px maroon;
+  transition: background 0.3s ease;
+}
+
+.case-card button:hover {
+  background-color: #0f0f0f;
+  color: maroon;
+  border: 2px solid maroon;
+}
+
+
+@media (max-width: 768px) {
+  .case-selector-container {
+    padding: 2rem;
+  }
+
+  .case-selector-container h2 {
+    font-size: 2rem;
+  }
+
+  .case-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .case-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .case-card p {
+    font-size: 0.9rem;
+  }
+
+  .case-card button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-selector-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .case-selector-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-card {
+    padding: 1rem;
+  }
+}

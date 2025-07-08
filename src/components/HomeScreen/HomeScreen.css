@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caprasimo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quintessential&display=swap');
+.home {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bitcount Grid Double', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 91.25vh;
+  width: 100vw;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.home-container {
+  background-color: rgba(15, 15, 15, 0.9); 
+  color: #16f2b3;
+  padding: 4rem 6rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 84, 0.3);
+  text-align: center;
+  width: 60vw;
+  max-width: 800px;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  color: #ff0054;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.home-container p {
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  color: #fefefe;
+}
+
+.home-container button {
+  background-color: crimson;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px maroon;
+  transition: background 0.3s ease;
+}
+
+.home-container button:hover {
+  background-color: #0f0f0f;
+  color: maroon;
+  border: 2px solid maroon;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 2rem;
+    width: 90vw;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+
+  .home-container button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 1.5rem;
+  }
+
+  .home-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-container p {
+    font-size: 0.95rem;
+  }
+
+  .home-container button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Poppins&display=swap');
+
+/* 🌌 Fullscreen cyber background */
+.clue-selector {
+  background-image: url('/assets/background.jpg'); /* Optional eerie bg */
+  background-size: cover;
+  background-position: center;
+  min-height: 91.25vh;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bitcount Grid Double', sans-serif;
+  box-sizing: border-box;
+  background-color: #0f172a; /* fallback dark bg */
+}
+
+/* 📦 Container */
+.clue-selector-box {
+  background-color: rgba(15, 15, 15, 0.9); /* translucent dark */
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 84, 0.3);
+  color: #f8fafc;
+  max-height: fit-content;
+}
+
+/* 🧠 Title */
+.clue-selector-box h2 {
+  color: #ff0054;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+/* 🧩 Clue grid */
+.clue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* 🧿 Clue card */
+.clue-card {
+  position: relative;
+  /* background: url('/assets/cyber-overlay.png') center/cover no-repeat; 🖼️ Eerie cyber image */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 84, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+/* 👻 Dark glass overlay */
+.clue-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  border-radius: 12px;
+}
+
+/* 🪄 Content inside */
+.clue-card * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🧠 Clue title */
+.clue-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+/* ✅ Completion indicator */
+.complete {
+  color: limegreen;
+  font-weight: bold;
+}
+
+/* 🖲️ Hover effect */
+.clue-card:hover {
+  transform: translateY(-20px);
+}
+
+/* 🎯 Button */
+.clue-grid button {
+  margin-top: 10rem;
+  padding: 3px 0.5px;
+  background: crimson;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px maroon;
+  
+}
+
+.clue-grid button:hover {
+  background: black;
+  color: maroon;
+  border: 1px solid maroon;
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 768px) {
+  .clue-selector-box {
+    padding: 2rem;
+  }
+
+  .clue-selector-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .clue-card {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .clue-card h3 {
+    font-size: 1rem;
+  }
+
+  .clue-grid button {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clue-selector {
+    padding: 2rem 1rem;
+  }
+
+  .clue-selector-box {
+    padding: 1.5rem;
+  }
+
+  .clue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clue-card {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .clue-card h3 {
+    font-size: 1rem;
+  }
+}

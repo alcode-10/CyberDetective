@@ -1,0 +1,159 @@
+.report-container {
+  background: rgba(0, 0, 0, 0.0); /* translucent panel */
+  border-radius: 1px;
+  max-width: 60rem;
+  margin-top:1000px;
+  height:39rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  position: relative;
+}
+.report-container h2 {
+  font-size: 2.2rem;
+  font-family: 'Caprasimo', 'Poppins', sans-serif;
+  color: crimson;
+  text-shadow: 0 0 6px white, 0 0 5px white;
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+  border-bottom: 2px dashed rgba(0, 255, 255, 0.4);
+  padding-bottom: 0.5rem;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+/* Optional glowing animation for text */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px white, 0 0 3px white;
+  }
+  to {
+    text-shadow: 0 0 6px black, 0 0 5px black;
+  }
+}
+
+
+/* Fullscreen HUD background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.0);
+  background-image: url('/assets/report.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 91%;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Input style */
+.report-container input {
+  padding: 0.7rem;
+  width: 80%;
+  margin: 1rem 0;
+  border: 1px solid crimson;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Buttons with neon glow */
+.report-container button {
+  background-color: crimson;
+  color: black;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+  box-shadow: 0 0 1px #00f7ff, 0 0 12px #00f7ff88;
+}
+.report-container button:hover {
+  transform: scale(1.05);
+}
+
+/* Report card section */
+.report-card {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.0); 
+  border-radius: 12px;
+  height:39rem;
+}
+
+/* Badge */
+.badge {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  background: rgba(0, 255, 150, 0.2);
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #00ffa2;
+  color: #00ffa2;
+}
+
+/* Tips section */
+.tips-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed #fff;
+  border-radius: 10px;
+}
+
+/* Additional tips button */
+.tips-btn {
+  margin-top: 1rem;
+  background-color: #00f7ff;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 1px #00f7ff, 0 0 12px #00f7ff88;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .report-container {
+    padding: 1.5rem;
+  }
+
+  .report-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .report-container input,
+  .report-container button,
+  .tips-btn {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .report-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .report-container {
+    padding: 1rem;
+  }
+
+  .badge {
+    font-size: 1rem;
+  }
+}

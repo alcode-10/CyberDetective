@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Playfair+Display:wght@400;600&display=swap');
+.caseintro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91.25vh;
+  background-image: url('/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.2); 
+  font-family: 'Bitcount Grid Double', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.caseintro-box {
+  background-color: rgba(15, 15, 15, 0.9); 
+  color: #16f2b3;
+  padding: 4rem 5rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(255, 0, 84, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+.caseintro-box h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #ff0054;
+  text-shadow: 1px 1px 3px #000;
+  font-family: 'Bitcount Grid Double', sans-serif;
+}
+
+
+.typewriter-text {
+  white-space: pre-line;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  color: #f8fafc;
+  font-weight: 500;
+  min-height: 100px;
+}
+
+.typewriter-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  color: crimson;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+.caseintro-box button {
+  margin-top: 2rem;
+  padding: 0.8rem 2.2rem;
+  background: crimson;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px maroon;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.caseintro-box button:hover {
+  background: #0f0f0f;
+  color: maroon;
+  border: 2px solid maroon;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .caseintro-box {
+    padding: 2rem;
+  }
+
+  .caseintro-box h2 {
+    font-size: 2rem;
+  }
+
+  .typewriter-text {
+    font-size: 1rem;
+  }
+
+  .caseintro-box button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .caseintro-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .caseintro-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .typewriter-text {
+    font-size: 0.95rem;
+  }
+}

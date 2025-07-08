@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url('/assets/report.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.tips-page {
+  background: rgba(0, 0, 0, 0); /* translucent panel */
+  border-radius: 1px;
+  max-width: 50rem;
+  margin-top:2rem;
+  height:38rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  
+}
+
+.tips-page h2 {
+  font-size: 2.2rem;
+  font-family: 'Caprasimo', 'Poppins', sans-serif;
+  color: crimson;
+  text-shadow: 0 0 5px white, 0 0 10px crimson;
+  margin-bottom: 1.5rem;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  border-bottom: 2px dashed crimson;
+  padding-bottom: 0.5rem;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px white, 0 0 7px crimson;
+  }
+  to {
+    text-shadow: 0 0 10px white, 0 0 12px crimson;
+  }
+}
+
+.tips-list {
+  text-align: left;
+  margin: 0 auto 2rem;
+  padding-left: 1rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.tips-list li {
+  margin-bottom: 1rem;
+}
+
+/* Back button */
+.back-btn {
+  background-color: crimson;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px crimson, 0 0 15px rgba(255, 0, 55, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tips-page h2 {
+    font-size: 1.8rem;
+  }
+  .tips-list {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tips-page {
+    padding: 1.2rem;
+  }
+  .tips-page h2 {
+    font-size: 1.5rem;
+  }
+  .back-btn {
+    width: 100%;
+  }
+}

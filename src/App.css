@@ -1,38 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caprasimo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quintessential&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bitcount Grid Double', sans-serif;
+  background-color: black;
+  color: #f8fafc;
+}
+
 .App {
   text-align: center;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: burlywood;
+  color: #0f172a;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+  color: #ff0054;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  font-size: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 8px rgba(255, 0, 84, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.main-header nav button {
+  margin-left: 1rem;
+  background-color: #16f2b3;
+  color: #0f0f0f;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 0 10px #16f2b3;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-header nav button:hover {
+  background-color: #0f0f0f;
+  color: #16f2b3;
+  border: 1px solid #16f2b3;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .main-header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .main-header nav button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
   }
 }
