@@ -51,7 +51,7 @@ const clues = {
     {
       id: 1,
       type: "click", // type of interaction: 'click', 'type', 'select'
-      title: "The Suspicious DM..",
+      title: "Suspicious DM..",
       prompt: `Zara received this DM on Instagram:
       Click everything in this message that looks suspicious.`,
       fakechat: [

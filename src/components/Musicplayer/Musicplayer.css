@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Poppins&display=swap');
+
+.music-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px crimson, 0 0 15px rgba(255, 0, 85, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.music-toggle-btn:hover {
+  transform: scale(1.07);
+  background-color: #0f0f0f;
+  color: crimson;
+  border: 1px solid crimson;
+  box-shadow: 0 0 10px crimson, 0 0 20px rgba(255, 0, 85, 0.8);
+}
+
+.music-toggle-btn.muted {
+  background-color:black;
+  box-shadow: 0 0 5px #999;
+  color: #ccc;
+}
+
 @media (max-width: 600px) {
-    .music-toggle-btn {
-      bottom: 12px !important;
-      right: 12px !important;
-      font-size: 0.8rem !important;
-      padding: 0.4rem 0.8rem !important;
-    }
+  .music-toggle-btn {
+    bottom: 12px;
+    right: 12px;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
   }
-  
+}

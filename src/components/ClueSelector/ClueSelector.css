@@ -78,7 +78,7 @@
 
 
 .clue-card h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   font-family: 'Bitcount Grid Double', sans-serif;
 }
@@ -96,7 +96,7 @@
 
 
 .clue-grid button {
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding: 3px 0.5px;
   background: crimson;
   color: #0f0f0f;
@@ -107,6 +107,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px maroon;
+  margin-bottom: 50px;
   
 }
 
