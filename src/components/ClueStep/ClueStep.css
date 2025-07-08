@@ -69,8 +69,10 @@
 }
 
 .option-btn.selected {
-  background-color: #112233;
-  box-shadow: 0 0 8px #16f2b3;
+  background-color: crimson;
+  color: white;
+  border-color: crimson;
+  box-shadow: 0 0 8px crimson;
 }
 
 .option-btn.correct {
@@ -84,7 +86,6 @@
   border-color: red;
   color: #ffb6b6;
 }
-
 .result-msg {
   text-align: center;
   font-size: 1.2rem;

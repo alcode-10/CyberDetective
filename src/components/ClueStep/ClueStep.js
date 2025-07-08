@@ -6,8 +6,7 @@ const ClueStep = ({ clue, onNext }) => {
   const [inputValue, setInputValue] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  
-  
+
   useEffect(() => {
     resetClueState();
   }, [clue.id]);
@@ -52,14 +51,13 @@ const ClueStep = ({ clue, onNext }) => {
       <div className="clue-container">
         <h2>{clue.title}</h2>
         <p className="prompt-text">{clue.prompt}</p>
+
         {clue.fakechat && (
           <div className="fake-chat">
             {clue.fakechat.map((msg, index) => (
               <div
                 key={index}
-                className={`chat-bubble ${
-                  msg.from === "scammer" ? "scammer" : "user"
-                }`}
+                className={`chat-bubble ${msg.from === "scammer" ? "scammer" : "user"}`}
               >
                 {msg.text}
               </div>
@@ -69,27 +67,25 @@ const ClueStep = ({ clue, onNext }) => {
 
         {(clue.type === "click" || clue.type === "select") && clue.options && (
           <div className="options">
-            {clue.options.map((opt) => (
-              <button
-                key={opt.text}
-                className={`option-btn
-                  ${selected.includes(opt.text) ? "selected" : ""}
-                  ${
-                    submitted && opt.correct && selected.includes(opt.text)
-                      ? "correct"
-                      : ""
-                  }
-                  ${
-                    submitted && !opt.correct && selected.includes(opt.text)
-                      ? "wrong"
-                      : ""
-                  }
-                `}
-                onClick={() => toggleOption(opt.text)}
-              >
-                {opt.text}
-              </button>
-            ))}
+            {clue.options.map((opt) => {
+              const isSelected = selected.includes(opt.text);
+              const classes = [
+                "option-btn",
+                isSelected && !submitted ? "selected" : "",
+                submitted && isSelected && opt.correct ? "correct" : "",
+                submitted && isSelected && !opt.correct ? "wrong" : ""
+              ].join(" ");
+
+              return (
+                <button
+                  key={opt.text}
+                  className={classes}
+                  onClick={() => toggleOption(opt.text)}
+                >
+                  {opt.text}
+                </button>
+              );
+            })}
           </div>
         )}
 
@@ -113,9 +109,7 @@ const ClueStep = ({ clue, onNext }) => {
         {submitted && (
           <>
             <p className="result-msg">
-              {isCorrect
-                ? `✅ ${clue.success}`
-                : "Not quite right. Try again?"}
+              {isCorrect ? `✅ ${clue.success}` : "Not quite right. Try again?"}
             </p>
 
             {isCorrect ? (
@@ -132,5 +126,6 @@ const ClueStep = ({ clue, onNext }) => {
       </div>
     </div>
   );
-}  
+};
+
 export default ClueStep;
