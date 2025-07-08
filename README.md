@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CyberDetective
 
-## Available Scripts
+CyberDetective is an eerie, immersive web experience that educates users about real-world cybercrime threats through interactive detective cases. Built for awareness, action, and education, each case helps users identify scams, frauds, and recovery paths — one clue at a time.
 
-In the project directory, you can run:
+##  Live Demo  
+🔗 [cyber-detective.vercel.app](https://cyber-detective-pi.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Idea & Purpose
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Many people fall prey to cybercrimes simply because they don’t recognize early red flags.  
+**CyberDetective** gamifies this problem into bite-sized mysteries that simulate real attack scenarios (phishing, OTP fraud, identity theft, etc.), empowering users through story-based learning.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Features
 
-### `npm run build`
+-  **Interactive Case Files** — Click, solve, and uncover digital mysteries  
+-  **Typewriter Narrative** — Realistic storytelling for each scenario  
+-  **Immersive UI** — Blurred glassmorphism + eerie hacker vibe  
+-  **Background Music Toggle** — Responsive, persistent ambient theme  
+-  **Clue-by-Clue System** — Learn the signs of a scam through interactive clue panels  
+-  **Final Report Generation** — Personalized reports & recovery tips after each case  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Frontend        | Details                         |
+|----------------|----------------------------------|
+| React.js        | Core framework                  |
+| CSS3            | Eerie aesthetic, glassmorphism  |
+| Vercel          | Deployment                      |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Running Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repo**  
+```bash
+git clone https://github.com/your-username/cyberdetective.git
+cd cyberdetective
+````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+3. **Start the dev server**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  Future Enhancements
 
-### Code Splitting
+* More realistic case files
+* Voice narration for accessibility
+* AI Assistant for live clue suggestions
+* Backend tracking of user choices (for gamification or scoring)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+##  Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Made by** \[Manasvi Bansal] — for 2025 Techinance Cyberhack
+Let’s fight cybercrime, one clue at a time 🕵️‍♀️
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
